@@ -5,7 +5,7 @@ Param (
 )
 
 # Import Operations Manager to Retrieve Alert Information
-Import-Module "C:\Program Files\Microsoft System Center 2016\Operations Manager\Powershell\OperationsManager\OperationsManager.psm1"
+Import-Module -Name OperationsManager
 
 # Get Alert Information
 $Alert = Get-SCOMAlert -id $AlertID
